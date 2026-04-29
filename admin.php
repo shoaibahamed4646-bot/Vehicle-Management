@@ -7,7 +7,7 @@ if (!isset($_SESSION['admin_id'])) {
     exit();
 }
 
-// Fetch dashboard statistics
+ 
 // 1. Total Customers
 $result = $conn->query("SELECT COUNT(*) as total FROM customers");
 $total_customers = $result->fetch_assoc()['total'];
