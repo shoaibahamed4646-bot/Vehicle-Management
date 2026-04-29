@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Registration</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h2>Register Vehicle</h2>
+    <form action="../includes/register_vehicle.php" method="POST">
+        <h3>Customer Information</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea>
+
+        <h3>Vehicle Information</h3>
+        <label for="vehicle_id">Vehicle ID:</label>
+        <input type="text" id="vehicle_id" name="vehicle_id" required>
+
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" name="brand" required>
+
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" required>
+
+        <label for="registration_no">Registration Number:</label>
+        <input type="text" id="registration_no" name="registration_no" required>
+
+        <label for="registration_date">Registration Date:</label>
+        <input type="date" id="registration_date" name="registration_date" required>
+
+        <label for="mileage">Mileage:</label>
+        <input type="number" id="mileage" name="mileage" required>
+
+        <label for="priority">Service Request Priority:</label>
+        <select id="priority" name="priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+
+        <button type="submit">Register Vehicle</button>
+    </form>
+</body>
+</html>
